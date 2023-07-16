@@ -209,3 +209,6 @@ bindsym $mod+o mode "$mode_system"
 bindsym $mod+Control+1 move workspace to output eDP-1
 # LAPTOP HDMI EXIT
 bindsym $mod+Control+2 move workspace to output HDMI-2
+
+# SETUP SECOND MONITOR
+bindsym $mod+m exec ~/.config/i3/display_config.sh
