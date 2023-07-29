@@ -45,3 +45,10 @@ export FZF_ALT_C_OPTS="--height 100% \
 --pointer ▶ \
 --marker ⇒"
 
+
+# Seting up go 1.20 path
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/Projects/Proj1
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH 
+
