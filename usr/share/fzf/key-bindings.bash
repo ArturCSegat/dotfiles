@@ -41,7 +41,7 @@ __fzf_cd__() {
   local cmd opts dir
   cmd="${FZF_ALT_C_COMMAND:-"command find . -type d"}"
   opts="--height ${FZF_TMUX_HEIGHT:-40%} --bind=ctrl-z:ignore --reverse ${FZF_DEFAULT_OPTS-} ${FZF_ALT_C_OPTS-} +m"
-  dir=$(eval "$cmd" | FZF_DEFAULT_OPTS="$opts" $(__fzfcmd)) && printf 'builtin cd -- %q' "$dir"
+  dir=$(eval "$cmd" | FZF_DEFAULT_OPTS="$opts" $(__fzfcmd)) && printf 'builtin cd -- %q; tmux new -A -s %q' "$dir" "$dir"
 }
 
 # Required to refresh the prompt after fzf
