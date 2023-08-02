@@ -212,3 +212,5 @@ bindsym $mod+Control+2 move workspace to output HDMI-2
 
 # SETUP SECOND MONITOR
 bindsym $mod+m exec ~/.config/i3/display_config.sh
+
+bindsym $mod+p --release exec ~/.config/i3/scrot.sh
