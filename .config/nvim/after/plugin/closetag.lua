@@ -1,6 +1,6 @@
 -- filenames like *.xml, *.html, *.xhtml, ...
 -- These are the file extensions where this plugin is enabled.
-vim.g.closetag_filenames = '*.html,*.xhtml,*.phtml'
+vim.g.closetag_filenames = '*.html,*.xhtml,*.phtml,*.php'
 
 -- filenames like *.xml, *.xhtml, ...
 -- This will make the list of non-closing tags self-closing in the specified files.
