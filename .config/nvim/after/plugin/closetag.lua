@@ -8,7 +8,7 @@ vim.g.closetag_xhtml_filenames = '*.xhtml,*.jsx'
 
 -- filetypes like xml, html, xhtml, ...
 -- These are the file types where this plugin is enabled.
-vim.g.closetag_filetypes = 'html,xhtml,phtml'
+vim.g.closetag_filetypes = 'html,xhtml,phtml,php'
 
 -- filetypes like xml, xhtml, ...
 -- This will make the list of non-closing tags self-closing in the specified files.

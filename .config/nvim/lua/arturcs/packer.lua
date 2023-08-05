@@ -51,8 +51,12 @@ use({
     requires = "nvim-treesitter/nvim-treesitter",
 })
 
-use "terrortylor/nvim-comment"
-
+use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+}
 use 'alvan/vim-closetag'
 use "Alexis12119/nightly.nvim"
 use ({"ziontee113/color-picker.nvim",
