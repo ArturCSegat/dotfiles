@@ -47,6 +47,22 @@ require'lspconfig'.pylsp.setup{
   }
 }
 
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+require'lspconfig'.emmet_ls.setup({
+    -- on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = { "php", "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "svelte", "pug", "typescriptreact", "vue" },
+    init_options = {
+      html = {
+        options = {
+          -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+          ["bem.enabled"] = true,
+        },
+      },
+    }
+})
+
 cmp.setup({
   mapping = {
     -- `Enter` key to confirm completion
@@ -68,5 +84,5 @@ require("mason").setup()
 require("mason-lspconfig").setup()
 
 require("mason-lspconfig").setup {
-    ensure_installed = { "lua_ls", "rust_analyzer", "eslint", "vtsls", "tsserver", "gopls", "golangci_lint_ls"},
+    ensure_installed = { "lua_ls", "rust_analyzer", "eslint", "vtsls", "tsserver", "gopls", "golangci_lint_ls", "emmet_ls"},
 }
