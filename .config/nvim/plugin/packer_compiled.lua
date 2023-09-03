@@ -96,11 +96,6 @@ _G.packer_plugins = {
     path = "/home/arturcs/.local/share/nvim/site/pack/packer/start/color-picker.nvim",
     url = "https://github.com/ziontee113/color-picker.nvim"
   },
-  ["gruvbox.nvim"] = {
-    loaded = true,
-    path = "/home/arturcs/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
-  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/arturcs/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -120,16 +115,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arturcs/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  moonfly = {
-    loaded = true,
-    path = "/home/arturcs/.local/share/nvim/site/pack/packer/start/moonfly",
-    url = "https://github.com/bluz71/vim-moonfly-colors"
-  },
-  ["nightly.nvim"] = {
-    loaded = true,
-    path = "/home/arturcs/.local/share/nvim/site/pack/packer/start/nightly.nvim",
-    url = "https://github.com/Alexis12119/nightly.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -183,11 +168,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arturcs/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  ["vim-closetag"] = {
-    loaded = true,
-    path = "/home/arturcs/.local/share/nvim/site/pack/packer/start/vim-closetag",
-    url = "https://github.com/alvan/vim-closetag"
   }
 }
 
