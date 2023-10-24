@@ -66,5 +66,6 @@ return require('packer').startup(function(use)
 
     use({ 'rose-pine/neovim', as = 'rose-pine' })
     use({ 'NLKNguyen/papercolor-theme', as = 'PaperColor' })
+    use ({ 'projekt0n/caret.nvim' })
 end)
 

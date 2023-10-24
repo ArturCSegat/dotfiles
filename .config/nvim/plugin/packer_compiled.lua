@@ -85,6 +85,16 @@ _G.packer_plugins = {
     path = "/home/arturcs/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  PaperColor = {
+    loaded = true,
+    path = "/home/arturcs/.local/share/nvim/site/pack/packer/start/PaperColor",
+    url = "https://github.com/NLKNguyen/papercolor-theme"
+  },
+  ["caret.nvim"] = {
+    loaded = true,
+    path = "/home/arturcs/.local/share/nvim/site/pack/packer/start/caret.nvim",
+    url = "https://github.com/projekt0n/caret.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/arturcs/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -148,11 +158,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arturcs/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  papercolor = {
-    loaded = true,
-    path = "/home/arturcs/.local/share/nvim/site/pack/packer/start/papercolor",
-    url = "https://github.com/NLKNguyen/papercolor-theme"
   },
   ["plenary.nvim"] = {
     loaded = true,
