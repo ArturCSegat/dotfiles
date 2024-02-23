@@ -32,4 +32,3 @@ vim.g.closetag_shortcut = '>'
 
 -- Add > at current position without closing the current tag, default is ''
 vim.g.closetag_close_shortcut = '<leader>>'
-
