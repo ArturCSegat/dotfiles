@@ -1,4 +1,4 @@
-    -- This file can be loaded by calling `lua require('plugins')` from your init.vim
+-- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
@@ -59,25 +59,11 @@ return require('packer').startup(function(use)
         requires = "nvim-treesitter/nvim-treesitter",
     })
 
-    use({
-        "iamcco/markdown-preview.nvim",
-        run = function() vim.fn["mkdp#util#install"]() end,
-    })
-
     use {
         'numToStr/Comment.nvim',
         config = function()
             require('Comment').setup()
         end
     }
-
-    use {
-        "ThePrimeagen/harpoon",
-        branch = "harpoon2",
-        requires = { {"nvim-lua/plenary.nvim"} }
-    }
-
-    use({ 'NLKNguyen/papercolor-theme', as = 'PaperColor' })
-    use 'metalelf0/jellybeans-nvim'
 end)
 

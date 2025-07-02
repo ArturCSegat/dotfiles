@@ -71,6 +71,22 @@ cmp.setup({
   }
 })
 
+require'lspconfig'.clangd.setup {
+  cmd = { "clangd", "--background-index", "--clang-tidy", "--completion-style=detailed", "--header-insertion=never", "--query-driver=/usr/bin/avr-gcc"},
+  root_dir = require'lspconfig'.util.root_pattern(".clangd", "compile_commands.json", "Makefile"),
+  filetypes = { "c", "cpp", "objc", "objcpp" },  -- Ensure clangd handles your file types
+}
+
+local MY_FQBN = "esp32:esp32:esp32cam"
+require'lspconfig'.arduino_language_server.setup {
+    cmd = {
+        "arduino-language-server",
+        "-cli-config", "/home/arturcs/.arduino15/arduino-cli.yaml",
+        "-fqbn",
+        MY_FQBN
+    }
+}
+
 lsp.setup()
 
 require("mason").setup()
@@ -79,3 +95,4 @@ require("mason-lspconfig").setup()
 require("mason-lspconfig").setup {
     ensure_installed = { "lua_ls", "rust_analyzer", "eslint", "vtsls", "gopls", "golangci_lint_ls", "emmet_ls"},
 }
+
