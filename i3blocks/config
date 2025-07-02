@@ -1,3 +1,7 @@
+[date]
+command=date
+interval=30
+
 [battery]
 command=~/.config/i3blocks/battery.sh
 interval=30
