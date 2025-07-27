@@ -48,11 +48,6 @@ return require('packer').startup(function(use)
         }
     }
 
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-    }
-
     use({
         "nvim-treesitter/nvim-treesitter-textobjects",
         after = "nvim-treesitter",
@@ -65,5 +60,6 @@ return require('packer').startup(function(use)
             require('Comment').setup()
         end
     }
+
 end)
 

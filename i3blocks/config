@@ -1,5 +1,5 @@
 [date]
-command=date
+command=date +"%a %d %H:%M"
 interval=30
 
 [battery]

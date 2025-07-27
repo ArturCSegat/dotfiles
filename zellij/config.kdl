@@ -1,0 +1,22 @@
+show_startup_tips false
+
+pane_frames false 
+
+unbind "Alt k"
+unbind "Alt j"
+unbind "Alt t"
+keybinds {
+    normal {
+        bind "Ctrl s" { SwitchToMode "session";}
+        bind "Alt s" {
+            LaunchOrFocusPlugin "zellij:session-manager" {
+                floating true
+                move_to_focused_tab true
+            }
+            SwitchToMode "Normal"
+        }
+        bind "Alt t" { NewTab; }
+        bind "Alt k" { GoToNextTab; }
+        bind "Alt j" { GoToPreviousTab; }
+    }
+} 

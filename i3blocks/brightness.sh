@@ -2,4 +2,4 @@
 max=$(brightnessctl m)
 current=$(brightnessctl g)
 percent=$(( 100 * current / max ))
-echo "☀️ $percent%"
+echo "Bright: $percent%"
