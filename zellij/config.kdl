@@ -1,0 +1,37 @@
+show_startup_tips false
+
+pane_frames false 
+
+keybinds {
+    normal {
+	unbind "Ctrl o"
+        bind "Ctrl s" { SwitchToMode "session";}
+        bind "Alt s" {
+            LaunchOrFocusPlugin "zellij:session-manager" {
+                floating true
+                move_to_focused_tab true
+            }
+            SwitchToMode "Normal"
+        }
+        bind "Alt t" { NewTab; }
+        bind "Alt k" { GoToNextTab; }
+        bind "Alt j" { GoToPreviousTab; }
+    }
+} 
+
+// ~/.config/zellij/themes/default.kdl
+themes {
+  default {
+    fg 7
+    bg 24
+    black 0
+    red 0
+    green 8
+    yellow 0
+    blue 0
+    magenta 0
+    cyan 0
+    white 7
+    orange 7
+  }
+}

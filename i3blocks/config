@@ -1,0 +1,28 @@
+[date]
+command=date +"%a %d %H:%M"
+interval=30
+
+[battery]
+command=~/.config/i3blocks/battery.sh
+interval=30
+
+[volume]
+command=~/.config/i3blocks/volume.sh
+interval=2
+
+[brightness]
+command=~/.config/i3blocks/brightness.sh
+interval=10
+
+[wifi]
+command=~/.config/i3blocks/wifi.sh
+interval=30
+
+[ram]
+command=free -h | awk '/^Mem/ { print $3 "/" $2 }'
+interval=10
+label=RAM:
+
+[cpu]
+command=top -bn1 | grep "Cpu(s)" | awk '{print "CPU:" 100 - $8 "%"}'
+interval=5

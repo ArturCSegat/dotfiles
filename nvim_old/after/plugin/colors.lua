@@ -1,0 +1,26 @@
+function ColorMyPencils(color)
+    color = color or "desert"
+    vim.cmd.colorscheme(color)
+    vim.api.nvim_set_hl(0, 'Normal',         { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'NormalNC',       { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'NormalFloat',    { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'FloatBorder',    { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'Pmenu',          { bg = 'none', ctermbg = 'none' })
+    -- vim.api.nvim_set_hl(0, 'PmenuSel',       { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'PmenuSbar',      { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'PmenuThumb',     { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'SignColumn',     { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'VertSplit',      { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'StatusLine',     { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'StatusLineNC',   { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'LineNr',         { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'CursorLineNr',   { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'TabLine',        { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'TabLineFill',    { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'TabLineSel',     { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'WinSeparator',   { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'EndOfBuffer', { bg = 'none', ctermbg = 'none' })
+
+end
+
+ColorMyPencils()
